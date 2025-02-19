@@ -9,7 +9,8 @@ import { JoiValidationSchema } from './config/joi.validation';
     ConfigModule.forRoot({
       load: [ EnvConfiguration ],
       validationSchema: JoiValidationSchema,
-    }),
+    }), 
+    ProductModule
   ]
 })
 export class AppModule {}
