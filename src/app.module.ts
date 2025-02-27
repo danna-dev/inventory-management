@@ -4,6 +4,7 @@ import { EnvConfiguration } from './config/env.config';
 import { JoiValidationSchema } from './config/joi.validation';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { databaseConfig } from './config/database.config';
+import { ProductModule } from './product/product.module';
 
 @Module({
   imports: [ 
@@ -12,6 +13,7 @@ import { databaseConfig } from './config/database.config';
       validationSchema: JoiValidationSchema,
     }),
     TypeOrmModule.forRoot(databaseConfig()),
+    ProductModule
   ]
 })
 export class AppModule {}
