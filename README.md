@@ -5,35 +5,52 @@
 # Inventory Management API
 
 ## 📋 Prerequisites
-* Nest
-* Docker
-* PostgreSQL
-* Yarn
+
+- Nest
+- Docker
+- PostgreSQL
+- Yarn
 
 ## 🚀 Getting Started
 
 1. Install dependencies
+
 ```
  yarn install
 ```
-3. Clone the file ```.env.template``` and rename it to ```.env```
-4. Change the environment variables values in ```.env```
+
+3. Clone the file `.env.template` and rename it to `.env`
+4. Change the environment variables values in `.env`
 5. Create and run the containers
+
 ```
 docker-compose -f docker-compose.prod.yaml up --build
 ```
 
-## 📂 Migrations
+## 🏗 Development Guide
+
+### 📂 Migrations
+
 1. Generate a new migration
+
 ```
 NAME=CreateProductTable yarn typeorm:generate
 ```
+
 2. Run migrations
+
 ```
 yarn typeorm:run
 ```
+
 3. Revert migrations
+
 ```
 yarn typeorm:revert
 ```
 
+### Api Documentation
+
+The API documentation is available via Swagger.
+
+Swagger UI: http://localhost:3000/api/docs
