@@ -60,7 +60,6 @@ export class ProductService {
 
   async findOne(id: string): Promise<Product> {
     const product = await this.productRepository.findOne({ where: { id } });
-    product.id;
 
     if (!product)
       throw new BadRequestException(`Product with id ${id} not found`);

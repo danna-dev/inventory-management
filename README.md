@@ -49,6 +49,32 @@ yarn typeorm:run
 yarn typeorm:revert
 ```
 
+### 🧪 Testing
+
+1. Run tests
+
+```
+yarn test
+```
+
+2. Run tests with coverage
+
+```
+yarn test:cov
+```
+
+3. Run tests in watch mode
+
+```
+yarn test:watch
+```
+
+4. Open coverage report
+
+```
+ open coverage/lcov-report/index.html
+```
+
 ### Api Documentation
 
 The API documentation is available via Swagger.

@@ -1,7 +1,7 @@
 import { PartialType } from '@nestjs/mapped-types';
 import { Type } from 'class-transformer';
 import { IsEnum, IsOptional, IsPositive } from 'class-validator';
-import { PaginationDto } from 'src/common/dto/pagination.dto';
+import { PaginationDto } from '../../../common/dto';
 import { ProductCategory } from '../../constants';
 import { ApiProperty } from '@nestjs/swagger';
 
